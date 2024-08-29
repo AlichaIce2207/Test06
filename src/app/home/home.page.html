@@ -1,0 +1,121 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="aaa">
+    <ion-title>
+      Product
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="ccc">
+
+  <ion-card color="ddd">
+    <img alt="Silhouette of mountains" src="../../assets/img/i15promax.png" />
+    <ion-card-header>
+      <ion-card-title>iPhone 15 Pro Max</ion-card-title>
+      <ion-card-subtitle>ราคา 55,000 ฿</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button id="present-alert" size="large"><ion-icon name="add-outline"></ion-icon></ion-button>
+      <ion-alert
+      trigger="present-alert"
+      header="Please enter your info"
+      [buttons]="alertButtons"
+      [inputs]="alertInputs">
+      </ion-alert>
+      
+      <ion-button (click)="setOpen(true)" color="danger" size="large"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-action-sheet
+      [isOpen]="isActionSheetOpen"
+      header="Actions"
+      [buttons]="actionSheetButtons"
+      (didDismiss)="setOpen(false)">
+      </ion-action-sheet>
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <ion-card color="ddd">
+    <img alt="Silhouette of mountains" src="../../assets/img/A54.png" />
+    <ion-card-header>
+      <ion-card-title>Sumsung A54</ion-card-title>
+      <ion-card-subtitle>ราคา 45,000 ฿</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button id="present-alert" size="large"><ion-icon name="add-outline"></ion-icon></ion-button>
+      <ion-alert
+      trigger="present-alert"
+      header="Please enter your info"
+      [buttons]="alertButtons"
+      [inputs]="alertInputs">
+      </ion-alert>
+      
+      <ion-button (click)="setOpen(true)" color="danger" size="large"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-action-sheet
+      [isOpen]="isActionSheetOpen"
+      header="Actions"
+      [buttons]="actionSheetButtons"
+      (didDismiss)="setOpen(false)">
+      </ion-action-sheet>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card color="ddd">
+    <img alt="Silhouette of mountains" src="../../assets/img/mi14tpro.png" />
+    <ion-card-header>
+      <ion-card-title>Xiaomi 14 Tap Pro</ion-card-title>
+      <ion-card-subtitle>ราคา 35,000 ฿</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button id="present-alert" size="large"><ion-icon name="add-outline"></ion-icon></ion-button>
+      <ion-alert
+      trigger="present-alert"
+      header="Please enter your info"
+      [buttons]="alertButtons"
+      [inputs]="alertInputs">
+      </ion-alert>
+      
+      <ion-button (click)="setOpen(true)" color="danger" size="large"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-action-sheet
+      [isOpen]="isActionSheetOpen"
+      header="Actions"
+      [buttons]="actionSheetButtons"
+      (didDismiss)="setOpen(false)">
+      </ion-action-sheet>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card color="ddd">
+    <img alt="Silhouette of mountains" src="../../assets/img/s24u.png" />
+    <ion-card-header>
+      <ion-card-title>Sumsumg S24 Ultra</ion-card-title>
+      <ion-card-subtitle>ราคา 25,000 ฿</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-button id="present-alert" size="large"><ion-icon name="add-outline"></ion-icon></ion-button>
+      <ion-alert
+      trigger="present-alert"
+      header="Please enter your info"
+      [buttons]="alertButtons"
+      [inputs]="alertInputs">
+      </ion-alert>
+      
+      <ion-button (click)="setOpen(true)" color="danger" size="large"><ion-icon name="trash-outline"></ion-icon></ion-button>
+      <ion-action-sheet
+      [isOpen]="isActionSheetOpen"
+      header="Actions"
+      [buttons]="actionSheetButtons"
+      (didDismiss)="setOpen(false)">
+      </ion-action-sheet>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
+
